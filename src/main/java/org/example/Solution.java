@@ -23,6 +23,7 @@ public class Solution {
             if(number[i]=='1'){
                 readyToCount=true;
                 maxSpace= (currentSpace>maxSpace)? currentSpace : maxSpace;
+                currentSpace=0;
             }else{
                 if(readyToCount){
                     //we have 0 here

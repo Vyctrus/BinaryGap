@@ -1,10 +1,13 @@
 package testPackage;
 
 import org.example.Solution;
+import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.testng.annotations.AfterTest;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -36,4 +39,9 @@ public class TestCase4 {
         System.out.println(s.toBinary(N) +"---"+expected);
         Assert.assertTrue(s.toBinary(N).equals(expected));
     }
+    @AfterClass
+    public static void endTestCase4(){
+        System.out.println("---------------------End of Test Case 4------------");
+    }
+
 }

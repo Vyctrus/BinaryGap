@@ -1,7 +1,9 @@
 package testPackage;
 
 import org.example.Solution;
+import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -34,7 +36,13 @@ public class TestCase3 {
     @Test
     public void solutionTest(){
         Solution s=new Solution();
+        System.out.println(s.toBinary(N) +"  ---  "+s.solution(N));
         Assert.assertTrue(s.solution(N)==expected);
     }
+    @AfterClass
+    public static void endTestCase3(){
+        System.out.println("---------------------End of Test Case 3------------");
+    }
+
 
 }
