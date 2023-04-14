@@ -23,8 +23,11 @@ public class TestCase3 {
     @Parameterized.Parameters
     public static Collection parameters(){
         return Arrays.asList(new Object[][]{
-                {1,-1},
-                {5,3}
+                {529,4},
+                {20,1},
+                {15,0},
+                {32,0},
+                {1041,5}
         });
     }
 
